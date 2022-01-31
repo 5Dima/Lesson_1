@@ -1,4 +1,6 @@
 #include<iostream>
+#include<string>
+#include<vector>
 
 
 using namespace std;
@@ -11,7 +13,19 @@ public:
 	}
 };
 
+class figure {
+	vector<point> v;
+public:
+	figure(vector<point> v) {
+		this->v = v;
+	}
+	void set_figure(point p) {
+		v.push_back(p);
+	}
 
+
+
+};
 
 
 int main() {
